@@ -7,7 +7,8 @@ public class Gradecalculator{
     int a4;
     int a5;
       Scanner obj = new Scanner(System.in);
-     System.out.println("Enter the marks of all subjects:-");
+      System.out.println("                          GRADE CALCULATOR                      ");
+    System.out.println("Enter the marks of all subjects:-");
     System.out.println("1) English Marks-");
     a1 = obj.nextInt();
     System.out.println("2) Hindi Marks-");
@@ -18,30 +19,30 @@ public class Gradecalculator{
     a4 = obj.nextInt();
     System.out.println("5) Social Science Marks-");
     a5 = obj.nextInt();
-    int percentage = (a1+a2+a3+a4+a5)/5;
+    int b = (a1+a2+a3+a4+a5)/5;
     System.out.println("Result");
 
-    if(percentage>90 && percentage<=100){
+    if(b>=90 && b<=100){
         System.out.println("Your grade is :- A+");
         System.out.println("Status :  Pass");
     }
-    else if(percentage>80 && percentage<=90){
+    else if(b>=80){
         System.out.println("Your grade is :- A");
         System.out.println("Status :  Pass");
       }
-    else if(percentage>70 && percentage<=80){
+    else if(b>=70){
         System.out.println("Your grade is :- B+");
         System.out.println("Status :  Pass");
       }
-    else if(percentage>60 && percentage<=70){
+    else if(b>=60){
         System.out.println("Your grade is :- B");
         System.out.println("Status :  Pass");
       }
-    else if(percentage>50 && percentage<=60){
+    else if(b>=50){
         System.out.println("Your grade is :- C+");
         System.out.println("Status :  Pass");
         }
-    else if(percentage>40 && percentage<=50){
+    else if(b>=40){
         System.out.println("Your grade is :- C");
         System.out.println("Status :  Barely Pass");
             }
